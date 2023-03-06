@@ -6,10 +6,10 @@ const $cartMenu = document.querySelector(".cart-menu");
 const $cartX = document.querySelector(".cart-right-title .fa-xmark");
 const $header = document.querySelector("header");
 const $title = document.querySelector(".header-container > p");
-console.log($title)
-$title.addEventListener('click', () => {
-  location.pathname = "/main";
-})
+console.log($title);
+$title.addEventListener("click", () => {
+  location.pathname = "/jinwha/index.html";
+});
 
 $barIcon.addEventListener("click", () => {
   if ($barMenu.classList.contains("hidden")) {
