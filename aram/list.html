@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="./list.css">
+
+
+
+    <!-- 애니메이션 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 이모티콘 연결 -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+
+    <!-- 노토산스링크 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Noto+Sans:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="./pavi.ico" />
+    <title>HYFT_˘◡˘ List_Page</title>
+
+</head>
+
+<body>
+    <!-- 마우스 커서 -->
+    <div class="cursor" id="cursor"></div>
+    <!-- 헤더 -->
+    <!--헤더 시작 -->
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <p>How You Feel Today?</p>
+            <div class="header-right">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="login.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="bar-menu hidden">
+        <div class="bar-left">
+            <div class="bar-img"></div>
+        </div>
+        <div class="bar-right">
+            <a href="">Shop</a>
+            <a href="">Community</a>
+            <a href="">Brand Story</a>
+            <a href="">Review</a>
+            <a href="">Q & A</a>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search" />
+            </div>
+        </div>
+    </div>
+    <div class="cart-menu hidden">
+        <div class="cart-left">
+            <div class="cart-left-title">YOU MAY LIKE</div>
+            <div class="cart-left-box">
+                <div class="cart-left-photo"></div>
+                <p>상품이름</p>
+                <p>가격</p>
+            </div>
+            <div class="cart-left-box">
+                <div class="cart-left-photo"></div>
+                <p>상품이름</p>
+                <p>가격</p>
+            </div>
+        </div>
+        <div class="cart-right">
+            <div class="cart-right-title">
+                CART
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="cart-right-box"></div>
+            <div class="cart-right-box"></div>
+            <div class="cart-right-continue">
+                <p><span>C</span>CONTINUE YOUR ORDER</p>
+            </div>
+        </div>
+    </div>
+    <!-- 헤더 끝 -->
+
+    <!-- 본문시작-->
+    <div class="container">
+
+        <!-- 상단 노출 페이지 좌-감정리스트 / 우-신상품 더보기 -->
+        <div class="cnt1-1">
+            <!-- Feel List -->
+            <ul class="feelList detail_animation" data-aos="fade-up" data-aos-offset="200" data-aos-mirror="true"
+                data-aos-once="false" data-aos-easing="ease-out-cubic" data-aos-duration="1200" data-aos-delay="50">
+                <li class="clickE"> #HAPPY </li>
+                <li class="clickE">#BORED</li>
+                <li class="clickE">#SAD</li>
+                <li class="clickE">#NERVOUS</li>
+                <li class="clickE">#ANGRY</li>
+                <li class="clickE">#LONLEY</li>
+
+            </ul>
+
+            <!-- New Arrival 신상품 소개 -->
+            <div class="newArr">
+                <a href="./detailEnd.html">
+                    <div class="newImg"></div>
+                </a>
+                <div class="description">
+                    <div class="animation mdescription" data-aos="fade-right" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1000">
+                        <h2>NEW ARRIVAL</h2>
+                        <span class="newSpan">오늘, 어떤 기분이 들었나요? <br>
+                            당신의 감정에 맞춰,<br> 새로나온 상품을 만나보세요. </span>
+                        <span class="newSpan2">오늘의<br> 감정 & 상품</span>
+                        <p class="moreBtn">더보기 +</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Best 베스트 상품 리스트 -->
+        <div class="cnt1-2">
+            <div>
+                <h2>BEST</h2>
+                <p class="theBtn">더보기 +</p>
+            </div>
+            <ul class="bestList">
+            </ul>
+        </div>
+
+        <!-- Product List 상품 리스트  -->
+        <div class="cnt1-3">
+            <div>
+                <h2>LIST</h2>
+                <p class="theBtn">더보기 +</p>
+            </div>
+            <ul class="productList">
+            </ul>
+        </div>
+
+        <!-- Top 탑 버튼 & 감정 버튼 imoticon 픽스드 -->
+        <div id="btnScroll">
+            <div id="btnScrollToImotion">
+                <img src="./SVG/HAPPY.svg" alt="#HAPPY face character" class="im"></a>
+                <img src="./SVG/BORED.svg" alt="#BORED face character" class="im">
+                <img src="./SVG/SAD.svg" alt="#SAD face character" class="im">
+                <img src="./SVG/NERVOUS.svg" alt="#NERVOUS face character" class="im">
+                <img src="./SVG/ANGRY.svg" alt="#ANGRY face character" class="im">
+                <img src="./SVG/LONELY.svg" alt="#ANGRY face character" class="im">
+
+            </div>
+            <button id="btnScrollToTop">
+                <i class="fi fi-rr-arrow-small-up"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <!-- 푸터시작 -->
+    <footer>
+        <div class="footer-logo">
+            <img src="./SVG/logo.svg" />
+        </div>
+        <div class="footer-word">
+            <div class="footer-info">
+                <p>studio@hyft.com</p>
+                <br />
+                <p>394, Jungang-daero, Jung-gu, Daegu, Republic of Korea</p>
+                <p>+82 0507-1414-1018a</p>
+            </div>
+            <div class="footer-social">
+                <p>Twitter</p>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+    </footer>
+    <!-- 푸터끝 -->
+</body>
+<script src="./list.js"></script>
+<script> AOS.init();</script>
+
+</html>

@@ -1,0 +1,72 @@
+[
+  {
+    "img_picture": "./img/cat2-7.jpg",
+    "img_overEffect": "./img/hovers/hover-9.png",
+    "product_number": "circus boy band_023",
+    "product_name": "Cute cat Boy",
+    "price": "25,000",
+    "href": "list.html"
+  },
+  {
+    "img_picture": "./img/list2.webp",
+    "img_overEffect": "./img/167481171633918653.webp",
+    "product_number": "plant makes me comfotable_02",
+    "product_name": "My room Family",
+    "price": "20,000",
+    "href": "list.html"
+  },
+  {
+    "img_picture": "./img/list5.jpg",
+    "img_overEffect": "./img/hovers/hover-8.png",
+    "product_number": "Drink your Dream_no.23",
+    "product_feel": "lonley",
+    "product_name": "CBB Penguin Cup",
+    "price": "10,000",
+    "href": "list.html"
+  },
+  {
+    "img_picture": "./img/list4.jpg",
+    "img_overEffect": "./img/hovers/randomCBB.png",
+    "product_number": "circus boy band_002",
+    "product_feel": "lonley",
+    "product_name": "Random Hug Figure",
+    "price": "25,000",
+    "href": "list.html"
+  },
+  {
+    "img_picture": "./img/best3 (2).JPG",
+    "img_overEffect": "./img/hovers/hover-best3.png",
+    "product_number": "Made by Me_004",
+    "product_feel": "lonley",
+    "product_name": "Make Something",
+    "price": "12,000",
+    "href": "list.html"
+  },
+  {
+    "img_picture": "./img/list6.jpg",
+    "img_overEffect": "./img/hovers/hover-7.png",
+    "product_number": "circus boy band_019",
+    "product_feel": "lonley",
+    "product_name": "Cbb Hug Figure",
+    "price": "25,000",
+    "href": "list.html"
+  },
+  {
+    "img_picture": "./imgnew/posterbest.png",
+    "img_overEffect": "./imgnew/poster.png",
+    "product_number": "see poster no.03",
+    "product_feel": "lonley",
+    "product_name": "내방 풍경 poster",
+    "price": "10,000",
+    "href": "list.html"
+  },
+  {
+    "img_picture": "./img/alld1-4.jpg",
+    "img_overEffect": "./img/hovers/hover-12.png",
+    "product_number": "circus boy band_042",
+    "product_feel": "lonley",
+    "product_name": "Random Duck Figure",
+    "price": "25,000",
+    "href": "list.html"
+  }
+]

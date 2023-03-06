@@ -1,0 +1,38 @@
+[
+  {
+    "img_picture": "./imgnew/mushroom.jpg",
+    "img_overEffect": "./imgnew/movemushroom.png",
+    "product_number": "Made by Me_013",
+    "product_feel": "lonley",
+    "product_name": "my friend mushroom",
+    "price": "9,000",
+    "href": "list.html"
+  },
+  {
+    "img_picture": "./imgnew/posterbest.png",
+    "img_overEffect": "./imgnew/poster.png",
+    "product_number": "see poster no.03",
+    "product_feel": "lonley",
+    "product_name": "내방 풍경 poster",
+    "price": "10,000",
+    "href": "list.html"
+  },
+  {
+    "img_picture": "./img/best3 (2).JPG",
+    "img_overEffect": "./img/hovers/hover-best3.png",
+    "product_number": "Made by Me_004",
+    "product_feel": "lonley",
+    "product_name": "Make Something",
+    "price": "12,000",
+    "href": "list.html"
+  },
+  {
+    "img_picture": "./img/best4 (2).JPG",
+    "img_overEffect": "./img/hovers/hover-best4.gif",
+    "product_number": "creat Your ART_015",
+    "product_feel": "lonley",
+    "product_name": "Dumbo ART",
+    "price": "16,000",
+    "href": "list.html"
+  }
+]
