@@ -64,7 +64,7 @@ img {
 .cursor {
   width: 3rem;
   height: 3rem;
-  background: url('./SVG/LONELY.svg');
+  background: url('./svg/LONELY.svg');
   position: absolute;
   z-index: 9999;
   transform: translate(-50%, -50%);

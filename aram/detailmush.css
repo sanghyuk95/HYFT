@@ -20,7 +20,7 @@ button {
 .cursor {
   width: 3rem;
   height: 3rem;
-  background: url('./SVG/LONELY.svg');
+  background: url('./svg/LONELY.svg');
   border-radius: 100%;
   position: absolute;
   z-index: 1000;

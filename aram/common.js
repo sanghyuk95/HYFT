@@ -8,7 +8,7 @@ const $header = document.querySelector("header");
 const $title = document.querySelector(".header-container > p");
 console.log($title)
 $title.addEventListener('click', () => {
-  location.pathname = "/main";
+  location.pathname = "/jinwha/index.html";
 })
 
 $barIcon.addEventListener("click", () => {
