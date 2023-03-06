@@ -110,7 +110,7 @@
 
   $box.forEach((e) => {
     e.addEventListener('click', () => {
-      location.pathname = '/magazineDetail'
+      location.pathname = '/sanghyuk/magazineDetail.html'
     })
   })
 })();

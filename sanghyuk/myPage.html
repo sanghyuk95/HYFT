@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/myPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- 파비콘 -->
+    <link rel="icon" href="./icon/pavi.ico" />
+    <title>HYFT ˘◡˘</title>
+  </head>
+  <body>
+        <!-- 헤더시작 -->
+    <header>
+      <div class="header-container">
+        <div class="header-left">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <p>How You Feel Today?</p>
+        <div class="header-right">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <a href="../sanghyuk/login.html">
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="header-under">
+      <ul class="header-under-ul">
+        <li><a href="../aram/list2.html">shop</a></li>
+        <li><a href="../soyoung/boardreal.html">Community</a></li>
+        <li><a href="../sanghyuk/magazine.html">magazine</a></li>
+      </ul>
+    </div>
+    <div class="bar-menu hidden">
+      <div class="bar-left">
+        <div class="bar-img"></div>
+      </div>
+      <div class="bar-right">
+        <a href="../aram/list2.html">Shop</a>
+        <a href="../soyoung/boardreal.html">Community</a>
+        <a href="../sanghyuk/magazine.html">Magazine</a>
+        <a href="#">Q & a</a>
+        <a href="../sanghyuk/login.html">Login</a>
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+    </div>
+    <div class="cart-menu hidden">
+      <div class="cart-left">
+        <div class="cart-left-title">YOU MAY LIKE</div>
+        <div class="cart-left-box">
+          <div class="cart-left-photo1"></div>
+          <p>소품 인테리어 큐브 캔들</p>
+          <p>24,000원</p>
+        </div>
+        <div class="cart-left-box">
+          <div class="cart-left-photo2"></div>
+          <p>감성 무드등</p>
+          <p>41,000원</p>
+        </div>
+      </div>
+      <div class="cart-right">
+        <div class="cart-right-title">
+          CART
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="cart-right-box">
+          <div class="right_box_img">
+            <img src="./img/item/happyItem10.png" alt="" />
+          </div>
+          <div class="right_box_text">
+            <p>포근한 차렵이불</p>
+            <p>38,000원</p>
+          </div>
+        </div>
+        <div class="cart-right-box">
+          <div class="right_box_img">
+            <img src="./img/item/happyItem9.png" alt="" />
+          </div>
+          <div class="right_box_text">
+            <p>크리스마스 포스터</p>
+            <p>12,000원</p>
+          </div>
+        </div>
+        <a href="../sanghyuk/myPage.html">
+          <div class="cart-right-continue">
+            <p><span>C</span>ONTINUE YOUR ORDER</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- 헤더 끝 -->
+    <div class="container">
+      <div class="sidebar">
+        <div class="title">
+          <h1>my page</h1>
+        </div>
+        <div class="side-summary">
+          <div>
+            <h4>포인트</h4>
+            <p>1000P</p>
+          </div>
+          <div class="line"></div>
+          <div>
+            <h4>쿠폰</h4>
+            <p>0 개</p>
+          </div>
+          <div class="line"></div>
+          <div>
+            <h4>글</h4>
+            <p>0 개</p>
+          </div>
+          <div class="line"></div>
+          <div>
+            <h4>리뷰</h4>
+            <p>0 개</p>
+          </div>
+        </div>
+        <div class="side-menu">
+          <div>
+            <i class="fa-solid fa-repeat"></i>
+            <p>취소/반품/교환 내역</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-file-lines"></i>
+            <p>내 글 관리</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-comments"></i>
+            <p>리뷰 관리</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-bookmark"></i>
+            <p>북마크</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-truck"></i>
+            <p>배송지,환불계좌</p>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="profile">
+          <div class="profile-photo" 
+          style="background-image: url('https://booming-edge-376405.du.r.appspot.com/imageupload/<%= data.profile %>');">
+            <div class="profile-photo-modify">
+              <i class="fa-solid fa-camera-rotate"></i>
+            </div>
+          </div>
+          <div class="profile-info">
+            <h2>이름</h2>
+            <p>아이디</p>
+          </div>
+          <div class="profile-icon">
+            <i class="fa-solid fa-pen"></i>
+          </div>
+        </div>
+
+        <div class="summary">
+          <div>
+            <h4>포인트</h4>
+            <p>1000P</p>
+          </div>
+          <div class="line"></div>
+          <div>
+            <h4>쿠폰</h4>
+            <p>0 개</p>
+          </div>
+          <div class="line"></div>
+          <div>
+            <h4>글</h4>
+            <p>0 개</p>
+          </div>
+          <div class="line"></div>
+          <div>
+            <h4>리뷰</h4>
+            <p>0 개</p>
+          </div>
+        </div>
+
+        <div class="delivery">
+          <div class="delivery-title">
+            <h3>주문/배송 조회</h3>
+            <p>더보기 <i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+          </div>
+          <div class="tracking">
+            <div>
+              <h1>0</h1>
+              <p>주문접수</p>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+            <div>
+              <h1>0</h1>
+              <p>결제완료</p>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+            <div>
+              <h1>0</h1>
+              <p>상품준비</p>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+            <div>
+              <h1>0</h1>
+              <p>배송중</p>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+            <div>
+              <h1>0</h1>
+              <p>배송완료</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="recent">
+          <h3>최근 본 상품</h3>
+          <div class="recent-product">
+            <div class="recent-box">
+              <div class="recent-photo" style="background: center/cover no-repeat url(img/cat1-5.jpg)"></div>
+              <div class="recent-info">
+                <h4>제품명</h4>
+                <p>30,000원</p>
+              </div>
+            </div>
+            <div class="recent-box">
+              <div class="recent-photo" style="background: center/cover no-repeat url(img/a1-1.jpg)"></div>
+              <div class="recent-info">
+                <h4>제품명</h4>
+                <p>30,000원</p>
+              </div>
+            </div>
+            <div class="recent-box">
+              <div class="recent-photo" style="background: center/cover no-repeat url(img/list7.jpg)" ></div>
+              <div class="recent-info">
+                <h4>제품명</h4>
+                <p>30,000원</p>
+              </div>
+            </div>
+            <div class="recent-box">
+              <div class="recent-photo" style="background: center/cover no-repeat url(img/wduck1-1.jpg)"></div>
+              <div class="recent-info">
+                <h4>제품명</h4>
+                <p>30,000원</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-cart">
+          <h3>장바구니</h3>
+          <div class="my-cart-product">
+            <div class="my-cart-box-title">
+              <div class="my-cart-checkAll">
+                <input type="checkbox" id="checkAll" />
+                <span>전체선택</span>
+              </div>
+              <div class="my-cart-info">
+                <h3>제품명</h3>
+                <h4>가격</h4>
+              </div>
+            </div>
+            <div class="my-cart-box">
+              <div class="my-cart-check">
+                <input type="checkbox" id="checkbox" />
+              </div>
+              <div class="my-cart-photo" style="background: center/cover no-repeat url(img/cat1-5.jpg)"></div>
+              <div class="my-cart-info">
+                <h4>제품명</h4>
+                <p>30,000원</p>
+              </div>
+            </div>
+            <div class="my-cart-box">
+              <div class="my-cart-check">
+                <input type="checkbox" id="checkbox" />
+              </div>
+              <div class="my-cart-photo" style="background: center/cover no-repeat url(img/a1-1.jpg)"></div>
+              <div class="my-cart-info">
+                <h4>제품명</h4>
+                <p>30,000원</p>
+              </div>
+            </div>
+            <div class="my-cart-box">
+              <div class="my-cart-check">
+                <input type="checkbox" id="checkbox" />
+              </div>
+              <div class="my-cart-photo" style="background: center/cover no-repeat url(img/list7.jpg)"></div>
+              <div class="my-cart-info">
+                <h4>제품명</h4>
+                <p>30,000원</p>
+              </div>
+            </div>
+            <div class="my-cart-box">
+              <div class="my-cart-check">
+                <input type="checkbox" id="checkbox" />
+              </div>
+              <div class="my-cart-photo" style="background: center/cover no-repeat url(img/wduck1-1.jpg)"></div>
+              <div class="my-cart-info">
+                <h4>제품명</h4>
+                <p>30,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="my-cart-button">
+            <button class="my-cart-del">선택 삭제</button>
+            <button>주문 하기</button>
+          </div>
+        </div>
+
+        <div class="menu">
+          <div>
+            <i class="fa-solid fa-repeat"></i>
+            <p>취소/반품/교환 내역</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-file-lines"></i>
+            <p>내 글 관리</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-comments"></i>
+            <p>리뷰 관리</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-bookmark"></i>
+            <p>북마크</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-truck"></i>
+            <p>배송지,환불계좌</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal hidden">
+      <h3>프로필 사진 업로드</h3>
+      <i class="fa-solid fa-xmark"></i>
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label>이미지 선택
+          <input type="file" name="profile" class="profile-upload" onchange="readURL(this);"/>
+        </label>
+          <img id="preview" >
+        <button type="submit">이미지 올리기</button>
+      </form>
+    </div>
+
+    <!-- 푸터시작 -->
+    <footer>
+      <div class="footer-logo">
+        <img src="./SVG/logo.svg" />
+      </div>
+      <div class="footer-word">
+        <div class="footer-info">
+          <p>studio@hyft.com</p>
+          <br />
+          <p>394, Jungang-daero, Jung-gu, Daegu, Republic of Korea</p>
+          <p>+82 0507-1414-1018a</p>
+        </div>
+        <div class="footer-social">
+          <p>Twitter</p>
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>Contact Us</p>
+        </div>
+      </div>
+    </footer>
+    <!-- 푸터끝 -->
+  </body>
+  <script src="js/common.js"></script>
+  <script src="js/myPage.js"></script>
+</html>
