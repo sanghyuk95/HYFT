@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "title": "베어 허그 피규어",
+        "price": 25000,
+        "image": "./img/item/lonelyItem1.jpg"
+    },
+        {
+        "id": 1,
+        "title": "곰돌이 유리잔",
+        "price": 21000,
+        "image": "./img/item/lonelyItem2.jpg"
+    },
+        {
+        "id": 2,
+        "title": "선라이즈 머그컵",
+        "price": 21000,
+        "image": "./img/item/lonelyItem3.jpg"
+    },
+        {
+        "id": 3,
+        "title": "까마귀 피규어",
+        "price": 28000,
+        "image": "./img/item/lonelyItem4.jpg"
+    },
+        {
+        "id": 4,
+        "title": "할로윈 캣 보이",
+        "price": 25000,
+        "image": "./img/item/lonelyItem5.jpg"
+    },
+        {
+        "id": 5,
+        "title": "랜덤 허그 피규어",
+        "price": 25000,
+        "image": "./img/item/lonelyItem6.jpg"
+    },
+    {
+        "id": 6,
+        "title": "cbb 오리 피규어",
+        "price": 10000,
+        "image": "./img/item/lonelyItem7.jpg"
+    },
+    {
+        "id": 7,
+        "title": "cbb 펭귄 컵",
+        "price": 25000,
+        "image": "./img/item/lonelyItem8.jpg"
+    }
+]
