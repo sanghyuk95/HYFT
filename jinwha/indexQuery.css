@@ -1,0 +1,401 @@
+@media screen and (max-width: 1240px) {
+    .item_menu {
+        font-size: 4.4355vw !important;
+    }
+    .hyft_img,
+    .goals_img,
+    .package_img {
+        width: 32.2581vw !important;
+        height: 40.3226vw !important;
+    }
+        
+    .hyft_title,
+    .goals_title,
+    .package_title {
+        font-size: 4.8387vw;
+    }
+        
+    .hyft_subtitle,
+    .goals_subtitle,
+    .package_subtitle {
+        font-size: 1.9355vw;
+    }
+    
+    .goals_subtitle {
+        padding-left: 2.2581vw;
+    }
+
+    .left_title {
+        margin-bottom: 8rem !important;
+    }
+
+    #contentCommunity .commu_text {
+       font-size: 4.8387vw;
+       line-height: 6.4516vw;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .hyft_subtitle {
+        padding-left: 5.3125rem !important;
+    }
+
+    #contentMood {
+    flex-direction: column;
+    }
+
+    .left_title {
+        margin-bottom: 7.5rem;
+        font-size: 4.8361vw;
+    }
+
+    .left_title span {
+        margin-left: -1.2295vw !important;
+    }
+
+    .fixed_img {
+        height: 65.5738vw !important;
+    }
+
+    .mood_right_container {
+        height: 66.5rem !important;
+    }
+
+    .mood_box {
+        position: relative;
+        width: 32rem !important;
+      }
+
+    .mood_box img {
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        width: 40rem !important;
+      }
+
+    #contentMood .mood_box .mood_text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        padding: 1.25rem;
+        align-items: flex-end;
+        box-sizing: border-box;
+      }
+
+    .mood_text h2 {
+        color: transparent !important;
+      }
+
+    #contentMood .mood_box:hover {
+        transform: rotateY(0deg) scale(1.05);
+        z-index: 1;
+        box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+      }
+
+    #contentMood .mood_box:hover .mood_text h2 {
+        color: #fff !important;
+        transition: 0.3s;
+        text-transform: uppercase;
+        margin-bottom: 0.3125rem;
+        font-size: 2.25rem;
+        transform: translateY(-30px);
+        transition-delay: 0.3s;
+        font-weight: 600;
+      }
+
+    .mood_right_container {
+        height: 52.1rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .main {
+        justify-content: flex-start;
+        height: 82.6087vw;
+    }
+    .main-text1 {
+        font-size: 7.8261vw;
+        transform: translate(4.3478vw, 13.7391vw);
+        animation: slideInRight2 2.3s ease-in-out;
+    }
+    .main-text2 {
+        animation: slideInLeft 2.3s ease-in-out;
+    }
+    .main-img {
+        transform: translate(59.8261vw, 5.0435vw)
+    }
+    .main-img img {
+        width: 30.4348vw;
+        height: 39.1304vw;
+    }
+    .main-video {
+        width: 67%;
+        height: 100vh;
+        transform: translate(-2.5vw, 36vw);
+    }
+    .main-video-banner {
+        width: 80%;
+    }
+    .main-text2 {
+        font-size: 7.8261vw;
+        transform: translate(4.3478vw, 22.7391vw);
+    }
+    .main-line {
+        transform: translate(26.3478vw, 31.7391vw);
+    }
+    .main-line img {
+        width: 30vw;
+    }
+    .main-icon {
+        transform: translate(67vw, 48vw);
+    }
+    .main-icon img {
+        width: 17.3913vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #contentUs {
+        flex-direction: column;
+    }
+
+    .item_menu {
+        font-size: 3.01875rem;
+    }
+    .hyft_img,
+    .goals_img,
+    .package_img {
+        width: 20.125rem !important;
+        height: 25.1875rem !important;
+    }
+        
+    .hyft_title,
+    .goals_title,
+    .package_title {
+        font-size: 3.01875rem;
+    }
+
+    .hyft_subtitle,
+    .goals_subtitle {
+        margin-bottom: 6.25rem;
+        padding-left: 0 !important;
+    }
+        
+    .hyft_subtitle,
+    .goals_subtitle,
+    .package_subtitle {
+        font-size: 1.1875rem;
+        text-align: center;
+        line-height: 1.6875rem;
+    }
+
+    .left_title {
+        font-size: 7.2000vw !important;
+        margin-bottom: 12.8000vw !important;
+    }
+
+    #contentEmpty, #contentEmpty2 {
+        height: 27.2vw;
+    }
+
+    .fixed_text {
+        font-size: 6.0000vw;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    #contentItem .item_title {
+        font-size: 7.1856vw;
+        line-height: 9.2216vw;
+    }
+
+    .mood_right_container {
+        width: 76.6467vw;
+        height: 127.4251vw !important;
+    }
+
+    .mood_box img {
+        width: 76.6467vw !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .item_subTitle {
+        font-size: 3.2000vw !important;
+    }
+
+    #contentLine {
+        font-size: 13.3333vw;
+        margin-top: 13.3333vw;
+        margin-bottom: 26.6667vw !important;
+    }
+
+    .commu_text {
+        font-size: 2.5rem !important;
+        line-height: 3rem !important;
+    }
+   .happy_emo, .bored_emo, .sad_emo, .nervous_emo, .angry_emo, .lonely_emo {
+        width: 10.6667vw;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .right_box_img img{
+        width: 41.5761vw;
+  }
+}
+
+@media screen and (max-width: 630px) {
+    .item_emo_happy, .item_emo_boring, .item_emo_sad, .item_emo_lonely, .item_emo_angry, .item_emo_nervous {
+    width: 7.9365vw !important;
+}
+    .hyft_title,
+    .goals_title,
+    .package_title {
+        font-size: 7.6667vw;
+    }
+
+    .hyft_subtitle,
+    .goals_subtitle,
+    .package_subtitle {
+        font-size: 3.0635vw;
+    }
+
+    .left_title {
+        margin-bottom: 19.0476vw;
+    }
+
+    .mood_right_container img {
+        width: 79.3651vw;
+    }
+
+    #contentMood .mood_box:hover {
+        transform: rotateY(0deg) scale(1) !important;
+      }
+    }
+
+@media screen and (max-width: 520px) {
+    #contentItem .item_title {
+        font-size: 2.3125rem;
+        line-height: 3rem;
+    }
+
+    .item_subTitle {
+        font-size: 1rem !important;
+    }
+
+    .emo_happy {
+        width: 15.3846vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #contentUs {
+        padding: 1.875rem;
+    }
+
+    .hyft_img,
+    .goals_img,
+    .package_img {
+        width: 64.4000vw !important;
+        height: 80.6000vw !important;
+    }
+
+    .hyft_title,
+    .goals_title,
+    .package_title {
+        font-size: 2.39375rem;
+    }
+
+    .hyft_subtitle,
+    .goals_subtitle,
+    .package_subtitle {
+        font-size: 0.95625rem;
+    }
+
+    .left_title {
+        font-size: 2.25rem !important;
+        margin-bottom: 4rem !important;
+    }
+
+    .commu_text {
+        font-size: 8.0000vw !important;
+        line-height: 9.6000vw !important;
+    }
+
+    .memo_img {
+        width: 56.0000vw;
+    }
+
+    .memo_text {
+        font-size: 9.0000vw;
+    }
+    .right_box_text { 
+        text-align: center;
+        font-size: 3.5200vw;
+        line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+    .right_box_img img {
+        width: 11.433rem;
+    }
+    .right_box_text {
+        font-size: 0.946rem;
+    }
+    .main {
+        height: 120vw;
+    }
+    .main-text1, .main-text2 {
+        font-size: 8.6047vw;
+    }
+    .main-video {
+        display: none;
+    }
+    .main-img {
+        width: 93.0233vw;
+        transform: translate(1vw, 38.8837vw);
+    }
+    .main-img img {
+        width: 81.3953vw;
+        height: 100%;
+    }
+    .main-text2 {
+        transform: translate(36.3478vw, 23.7391vw);
+    }
+    .main-line img {
+        transform: translate(35.3478vw, -1vw);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .emo_happy {
+        width: 3.84375rem;
+    }
+
+    .menu_recommend, .menu_new, .menu_best {
+        font-size: 1.4125rem;
+    }
+
+    #contentUs {
+        padding: 7.5000vw;
+    }
+
+    .left_title {
+        margin: 79px;
+    }
+
+    .mood_right_container {
+        width: 19.125rem !important;
+        height: 31.7rem !important;
+    }
+
+    .mood_box img {
+        width: 19.125rem !important;
+    }
+}
