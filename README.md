@@ -1,6 +1,6 @@
 # HYFT
 
-주소 : https://sanghyuk95.github.io/HYFT/jinwha/index.html
+주소 : https://sanghyuk95.github.io/HYFT/sanghyuk/index.html
 
 맡은파트 : 
 

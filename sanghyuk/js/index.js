@@ -155,6 +155,6 @@ $lonely.addEventListener("animationend", () => {
 const $box = document.querySelectorAll(".box");
 $box.forEach((e) => {
   e.addEventListener("click", () => {
-    location.pathname = "/jinwha/index.html";
+    location.pathname = "/HYFT/jinwha/index.html";
   });
 });
