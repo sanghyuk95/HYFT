@@ -208,7 +208,7 @@ header.active {
     justify-content: flex-end;
   }
   .bar-left .bar-img {
-    background: url("../img/listGif.gif") no-repeat;
+    background: url("../item/listGif.gif") no-repeat;
     width: 70%;
     height: 50%;
     background-size: cover;
@@ -233,7 +233,7 @@ header.active {
     justify-content: flex-end;
   }
   .bar-left .bar-img {
-    background: url("../img/listGif.gif") no-repeat;
+    background: url("../item/listGif.gif") no-repeat;
     width: 400px;
     height: 520px;
     margin-top: 80px;
@@ -418,14 +418,14 @@ header.active {
     width: 200px;
     height: 200px;
     background-color: white;
-    background: url("../img/item/bestItem10.png");
+    background: url("../item/bestItem10.png");
     background-size: cover;
   }
   .cart-left-photo2 {
     width: 200px;
     height: 200px;
     background-color: white;
-    background: url("../img/item/happyItem9.png");
+    background: url("../item/happyItem9.png");
     background-size: cover;
   }
   .cart-right {

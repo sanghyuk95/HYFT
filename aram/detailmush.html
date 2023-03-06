@@ -1,569 +1,747 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- 애니메이션 -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- 엄지척 이모티콘 -->
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
 
     <!-- css 연결 -->
-    <link rel="stylesheet" href="./detailmush.css">
-
+    <link rel="stylesheet" href="./detailmush.css" />
 
     <!-- 노토산스링크 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Noto+Sans:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Noto+Sans:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- bebas 폰트 링크 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- cormorant SC 폰트 링크 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+SC:wght@700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <!-- 파비콘 -->
     <link rel="icon" href="./pavi.ico" />
     <!-- <title>HYFT ˘◡˘</title> -->
     <title>HYFT_˘◡˘ Detail_Page</title>
 
     <!-- 헤더 CSS -->
-    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="common.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- 마우스 커서 -->
     <div class="cursor"></div>
     <!-- 헤더 -->
     <!-- 헤더시작 -->
     <header>
-        <div class="header-container">
-            <div class="header-left">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <p>How You Feel Today?</p>
-            <div class="header-right">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <a href="/login">
-                    <i class="fa-solid fa-user"></i>
-                </a>
-            </div>
+      <div class="header-container">
+        <div class="header-left">
+          <i class="fa-solid fa-bars"></i>
         </div>
+        <p>How You Feel Today?</p>
+        <div class="header-right">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <a href="../sanghyuk/login.html">
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </div>
+      </div>
     </header>
     <div class="header-under">
-        <ul class="header-under-ul">
-            <li><a href="/product">shop</a></li>
-            <li><a href="/board">Community</a></li>
-            <li><a href="/magazine">magazine</a></li>
-        </ul>
+      <ul class="header-under-ul">
+        <li><a href="../aram/list2.html">shop</a></li>
+        <li><a href="../soyoung/boardreal.html">Community</a></li>
+        <li><a href="../sanghyuk/magazine.html">magazine</a></li>
+      </ul>
     </div>
     <div class="bar-menu hidden">
-        <div class="bar-left">
-            <div class="bar-img"></div>
+      <div class="bar-left">
+        <div class="bar-img"></div>
+      </div>
+      <div class="bar-right">
+        <a href="../aram/list2.html">Shop</a>
+        <a href="../soyoung/boardreal.html">Community</a>
+        <a href="../sanghyuk/magazine.html">Magazine</a>
+        <a href="#">Q & a</a>
+        <a href="../sanghyuk/login.html">Login</a>
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" />
         </div>
-        <div class="bar-right">
-            <a href="/product">Shop</a>
-            <a href="/board">Community</a>
-            <a href="/magazine">Magazine</a>
-            <a href="#">Q & a</a>
-            <a href="/login">Login</a>
-            <div>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search" />
-            </div>
-        </div>
+      </div>
     </div>
     <div class="cart-menu hidden">
-        <div class="cart-left">
-            <div class="cart-left-title">YOU MAY LIKE</div>
-            <div class="cart-left-box">
-                <div class="cart-left-photo1"></div>
-                <p>소품 인테리어 큐브 캔들</p>
-                <p>24,000원</p>
-            </div>
-            <div class="cart-left-box">
-                <div class="cart-left-photo2"></div>
-                <p>감성 무드등</p>
-                <p>41,000원</p>
-            </div>
+      <div class="cart-left">
+        <div class="cart-left-title">YOU MAY LIKE</div>
+        <div class="cart-left-box">
+          <div class="cart-left-photo1"></div>
+          <p>소품 인테리어 큐브 캔들</p>
+          <p>24,000원</p>
         </div>
-        <div class="cart-right">
-            <div class="cart-right-title">
-                CART
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <div class="cart-right-box">
-                <div class="right_box_img">
-                    <img src="img/item/happyItem10.png" alt="" />
-                </div>
-                <div class="right_box_text">
-                    <p>포근한 차렵이불</p>
-                    <p>38,000원</p>
-                </div>
-            </div>
-            <div class="cart-right-box">
-                <div class="right_box_img">
-                    <img src="img/item/recommendItem9.png" alt="" />
-                </div>
-                <div class="right_box_text">
-                    <p>크리스마스 포스터</p>
-                    <p>12,000원</p>
-                </div>
-            </div>
-            <a href="/myPage">
-                <div class="cart-right-continue">
-                    <p><span>C</span>ONTINUE YOUR ORDER</p>
-                </div>
-            </a>
+        <div class="cart-left-box">
+          <div class="cart-left-photo2"></div>
+          <p>감성 무드등</p>
+          <p>41,000원</p>
         </div>
+      </div>
+      <div class="cart-right">
+        <div class="cart-right-title">
+          CART
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="cart-right-box">
+          <div class="right_box_img">
+            <img src="../jinwha/img/item/happyItem10.png" alt="" />
+          </div>
+          <div class="right_box_text">
+            <p>포근한 차렵이불</p>
+            <p>38,000원</p>
+          </div>
+        </div>
+        <div class="cart-right-box">
+          <div class="right_box_img">
+            <img src="../jinwha/img/item/recommendItem9.png" alt="" />
+          </div>
+          <div class="right_box_text">
+            <p>크리스마스 포스터</p>
+            <p>12,000원</p>
+          </div>
+        </div>
+        <a href="../sanghyuk/myPage.html">
+          <div class="cart-right-continue">
+            <p><span>C</span>ONTINUE YOUR ORDER</p>
+          </div>
+        </a>
+      </div>
     </div>
     <!-- 헤더 끝 -->
 
     <!-- 컨테이너 -->
     <div class="detailContainer">
-        <!-- 상단 구매박스 -->
-        <div class="detailCnt1_1">
-            <!-- 제품 이미지 썸네일-->
-            <div class="detail1_1">
-                <img src="./imgnew/mushroom.jpg" alt="상품사진 circus boy band hug figure random" class="cnt1_1img"
-                    id="cnt1_1img">
-            </div>
-            <!-- 제품 명 & 가격 구매수량 배송비 배송방법  -->
-            <div class="detail1_2">
-                <div class="box1">
-                    <p>당신의 <span>외로움</span>을 채워 줄</p>
-                    <span>made by ME</span>
-                    <h3>MUSHROOM 재배 세트</h3>
-                </div>
-                <div class="box2">
-                    <div class="box2_box">
-                        <p class="box2_left">배송비</p>
-                        <p class="box2_right">3,000 원</p>
-                        <p class="box2_left">배송방법</p>
-                        <p class="box2_right">택배</p>
-                        <p class="box2_left">구매수량</p>
-                        <!-- 수량 버튼 +- 플러스 마이너스 plus minus button btn-->
-                        <p class="box2_right">
-                            <button class="btnPM"> + </button>
-                            1
-                            <button class="btnPM"> - </button>
-                        </p>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="box3">
-                    <div class="box3_box">
-                        <h3>총 구매 금액</h3>
-                        <h2>12,000 <span>원</span></h2>
-                        <!-- 장바구니 & 구매하기 버튼 button btn cart &buy-->
-                        <button class="btnB btncart">장바구니</button>
-                        <button class="btnB btnbuy" id="detailList1"">구매하기</button>
-                    </div>
-                </div>
-            </div>
+      <!-- 상단 구매박스 -->
+      <div class="detailCnt1_1">
+        <!-- 제품 이미지 썸네일-->
+        <div class="detail1_1">
+          <img
+            src="./imgnew/mushroom.jpg"
+            alt="상품사진 circus boy band hug figure random"
+            class="cnt1_1img"
+            id="cnt1_1img"
+          />
         </div>
-      
-                    <!-- 제품 썸네일 이미지 미니사이즈 호버용 이미지 -->
-                    <div class=" MiniI">
-                            <div class=" miniImg">
-                                <img src="./imgnew/mush2.JPG" alt="mini_img1 circus boy band hug figure cat"
-                                    class="mImg">
-                                <img src="./imgnew/mush5.JPG" alt="mini_img2 circus boy band hug figure blackcat"
-                                    class="mImg">
-                                <img src="./imgnew/mush14.png" alt="mini_img3 circus boy band hug figure bear"
-                                    class="mImg">
-                                <img src="./imgnew/mush16.png" alt="mini_img4 circus boy band hug figure case"
-                                    class="mImg">
+        <!-- 제품 명 & 가격 구매수량 배송비 배송방법  -->
+        <div class="detail1_2">
+          <div class="box1">
+            <p>당신의 <span>외로움</span>을 채워 줄</p>
+            <span>made by ME</span>
+            <h3>MUSHROOM 재배 세트</h3>
+          </div>
+          <div class="box2">
+            <div class="box2_box">
+              <p class="box2_left">배송비</p>
+              <p class="box2_right">3,000 원</p>
+              <p class="box2_left">배송방법</p>
+              <p class="box2_right">택배</p>
+              <p class="box2_left">구매수량</p>
+              <!-- 수량 버튼 +- 플러스 마이너스 plus minus button btn-->
+              <p class="box2_right">
+                <button class="btnPM">+</button>
+                1
+                <button class="btnPM">-</button>
+              </p>
+              <p></p>
+            </div>
+          </div>
+          <div class="box3">
+            <div class="box3_box">
+              <h3>총 구매 금액</h3>
+              <h2>12,000 <span>원</span></h2>
+              <!-- 장바구니 & 구매하기 버튼 button btn cart &buy-->
+              <button class="btnB btncart">장바구니</button>
+              <button class="btnB btnbuy" id="detailList1">구매하기</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                            </div>
-                            <div></div>
-                    </div>
-                </div>
+      <!-- 제품 썸네일 이미지 미니사이즈 호버용 이미지 -->
+      <div class="MiniI">
+        <div class="miniImg">
+          <img
+            src="./imgnew/mush2.JPG"
+            alt="mini_img1 circus boy band hug figure cat"
+            class="mImg"
+          />
+          <img
+            src="./imgnew/mush5.JPG"
+            alt="mini_img2 circus boy band hug figure blackcat"
+            class="mImg"
+          />
+          <img
+            src="./imgnew/mush14.png"
+            alt="mini_img3 circus boy band hug figure bear"
+            class="mImg"
+          />
+          <img
+            src="./imgnew/mush16.png"
+            alt="mini_img4 circus boy band hug figure case"
+            class="mImg"
+          />
+        </div>
+        <div></div>
+      </div>
+    </div>
 
+    <!-- 바로가기 메뉴 - 디테일 리뷰 커뮤니티 sticky  -->
+    <div class="detailList1">
+      <ul>
+        <li></li>
+        <a href="#detailList1">
+          <li id="detailPage">DETAIL</li>
+        </a>
+        <a href="#d_review">
+          <li id="reviewPage">REVIEW</li>
+        </a>
+        <a href="#d_community">
+          <li id="communityPage">COMMUNITY</li>
+        </a>
+        <li></li>
+      </ul>
+    </div>
 
-
-                <!-- 바로가기 메뉴 - 디테일 리뷰 커뮤니티 sticky  -->
-                <div class=" detailList1">
-                    <ul>
-                        <li></li>
-                        <a href="#detailList1">
-                            <li id="detailPage">DETAIL</li>
-                        </a>
-                        <a href="#d_review"">
-                        <li id=" reviewPage">REVIEW</li>
-                        </a>
-                        <a href="#d_community">
-                            <li id="communityPage">COMMUNITY</li>
-                        </a>
-                        <li></li>
-                    </ul>
-                </div>
-
-
-                <div class="detailCnt1_2" id="detailCnt1_2">
-
-
-                    <!-- 상세페이지 이미지 시작 -->
-                    <div class="detail_aria1">
-                        <!-- 백그라운드 그레이색상 이미지 3건 cbb bear figure  디테일 영역 1번째 -->
-                        <div id="d_img_1">
-                            <div></div>
-                            <div class="animation" data-aos="fade-up" data-aos-offset="50" data-aos-mirror="true"
-                                data-aos-once="false" data-aos-easing="ease-out-cubic" data-aos-duration="1200"
-                                data-aos-delay="50">
-                                <h4>당신이 외로울때 </h4>
-                                <h4>든든하게(?) 감싸주는</h4>
-                                <h4>반려 버섯재배세트 소개합니다.</h4>
-                                <h2>made MUSHROOMS</h2>
-                            </div>
-                        </div>
-                        <div id="d_img_2" class="animation" data-aos="fade-up" data-aos-easing="ease-out-cubic"
-                            data-aos-duration="1000">
-                            <div></div>
-                            <div class="animation" data-aos="fade-up" data-aos-offset="50" data-aos-mirror="true"
-                                data-aos-once="false" data-aos-easing="ease-out-cubic" data-aos-duration="1200"
-                                data-aos-delay="50">
-                                <!-- <h4>소중한 가족을 위해 </h4>
+    <div class="detailCnt1_2" id="detailCnt1_2">
+      <!-- 상세페이지 이미지 시작 -->
+      <div class="detail_aria1">
+        <!-- 백그라운드 그레이색상 이미지 3건 cbb bear figure  디테일 영역 1번째 -->
+        <div id="d_img_1">
+          <div></div>
+          <div
+            class="animation"
+            data-aos="fade-up"
+            data-aos-offset="50"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1200"
+            data-aos-delay="50"
+          >
+            <h4>당신이 외로울때</h4>
+            <h4>든든하게(?) 감싸주는</h4>
+            <h4>반려 버섯재배세트 소개합니다.</h4>
+            <h2>made MUSHROOMS</h2>
+          </div>
+        </div>
+        <div
+          id="d_img_2"
+          class="animation"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
+          <div></div>
+          <div
+            class="animation"
+            data-aos="fade-up"
+            data-aos-offset="50"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1200"
+            data-aos-delay="50"
+          >
+            <!-- <h4>소중한 가족을 위해 </h4>
                                 <h4>따뜻하게</h4>
                                 <h4>안아주세요</h4>
                                 <h2></h2> -->
-                            </div>
-                        </div>
-                        <div id="d_img_3" class="animation" data-aos="fade-up" data-aos-easing="ease-out-cubic"
-                            data-aos-duration="1000">
-                            <div></div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+        <div
+          id="d_img_3"
+          class="animation"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
+          <div></div>
+        </div>
+      </div>
 
-                    <div class="detail_aria2">
-                        <!-- 격자 이미지 4장 디테일 영역 2번째 -->
-                        <div class="detailLeft animation" data-aos="fade-right" data-aos-offset="100"
-                            data-aos-mirror="true" data-aos-once="false" data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2200" data-aos-delay="50">
-                            <img src="./imgnew/mush14.png" alt="circus boy band hug ficure black cat">
+      <div class="detail_aria2">
+        <!-- 격자 이미지 4장 디테일 영역 2번째 -->
+        <div
+          class="detailLeft animation"
+          data-aos="fade-right"
+          data-aos-offset="100"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2200"
+          data-aos-delay="50"
+        >
+          <img
+            src="./imgnew/mush14.png"
+            alt="circus boy band hug ficure black cat"
+          />
+        </div>
+        <div
+          class="detailRight detail2_text animation"
+          data-aos="fade-left"
+          data-aos-offset="100"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2200"
+          data-aos-delay="50"
+        >
+          오늘, <br />
+          외로움을 느낀 <br />당신의 선택
+        </div>
+        <div
+          class="detailLeft detail2_text animation"
+          data-aos="fade-right"
+          data-aos-offset="100"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2200"
+          data-aos-delay="50"
+        >
+          버섯 재배세트로 <br />
+          친구를 만들어봐요<br />감싸줄게요
+        </div>
+        <div
+          class="detailRight animation"
+          data-aos="fade-left"
+          data-aos-offset="100"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2200"
+          data-aos-delay="50"
+        >
+          <img
+            src=" ./imgnew/mush11.png"
+            alt="circus boy band hug figure cat"
+          />
+        </div>
+        <div
+          class="detailLeft animation"
+          data-aos="fade-right"
+          data-aos-offset="100"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2200"
+          data-aos-delay="50"
+        >
+          <img
+            src=" ./imgnew/mush12.png"
+            alt="circus boy band hug figure dog"
+          />
+        </div>
+        <div
+          class="detailRight detail2_text animation"
+          data-aos="fade-left"
+          data-aos-offset="100"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2200"
+          data-aos-delay="50"
+        >
+          외로울때 누군가 곁에 <br />
+          있어준다면<br />
+          배고픈 순간도<br />
+          구석으로 밀어놓고<br />
+        </div>
+        <div
+          class="detailLeft detail2_text animation"
+          data-aos="fade-right"
+          data-aos-offset="100"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2200"
+          data-aos-delay="50"
+        >
+          외로움이란 감정은<br />
+          지속적이기도 하고,<br />
+          지나가는 바람처럼 잠시 스쳐 <br />
+          지나갈 수도 있어요.<br />
+          우리 일상에 <br />
+          늘상 존재하는 감정. <br />
+          우리는 이 감정을 <br />
+          잘 소화하고 보내주어야 해요.<br />
+        </div>
+        <div
+          class="detailRight animation"
+          data-aos="fade-left"
+          data-aos-offset="100"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2200"
+          data-aos-delay="50"
+        >
+          <img
+            src=" ./imgnew/mush13.png"
+            alt="circus boy band hug figure bear"
+          />
+        </div>
+      </div>
 
-                        </div>
-                        <div class="detailRight detail2_text animation" data-aos="fade-left" data-aos-offset="100"
-                            data-aos-mirror="true" data-aos-once="false" data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2200" data-aos-delay="50"> 오늘, <br> 외로움을 느낀 <br>당신의 선택 </div>
-                        <div class=" detailLeft detail2_text animation" data-aos="fade-right" data-aos-offset="100"
-                            data-aos-mirror="true" data-aos-once="false" data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2200" data-aos-delay="50"> 버섯 재배세트로 <br> 친구를 만들어봐요<br>감싸줄게요</div>
-                        <div class=" detailRight animation" data-aos="fade-left" data-aos-offset="100"
-                            data-aos-mirror="true" data-aos-once="false" data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2200" data-aos-delay="50">
-                            <img src=" ./imgnew/mush11.png" alt="circus boy band hug figure cat">
+      <!-- 움직이는 텍스트 애니메이션 자바스크립트 사용  -->
+      <div class="detail_ariaText">
+        <div class="cover">
+          <p class="first-parallel parall"></p>
+        </div>
+        <div class="cover">
+          <p class="second-parallel parall"></p>
+        </div>
+      </div>
 
-                        </div>
-                        <div class="detailLeft animation" data-aos="fade-right" data-aos-offset="100"
-                            data-aos-mirror="true" data-aos-once="false" data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2200" data-aos-delay="50">
-                            <img src=" ./imgnew/mush12.png" alt="circus boy band hug figure dog">
+      <div class="detail_aria3">
+        <!-- full 이미지 1장 스케일 픽스드 디테일 영역 3번째-->
+        <div></div>
+        <div
+          class="animation"
+          data-aos="fade-left"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
+          <h2>오늘,<br />당신의<br />기분은 어떤가요?</h2>
+        </div>
+      </div>
+      <div class="detail_aria3Text">
+        <p></p>
+      </div>
 
-                        </div>
-                        <div class="detailRight detail2_text animation" data-aos="fade-left" data-aos-offset="100"
-                            data-aos-mirror="true" data-aos-once="false" data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2200" data-aos-delay="50">
+      <div class="detail_aria4">
+        <!-- circle 이미지 4장 디테일 영역 4번째 -->
+        <div class="dAria4_clc">
+          <div></div>
+          <div
+            class="animation"
+            data-aos="fade-up"
+            data-aos-offset="150"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="800"
+            data-aos-delay="50"
+          >
+            <img src=" ./imgnew/mush3.JPG" alt="cat hug boy" />
+          </div>
+          <div
+            class="animation"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1300"
+            data-aos-delay="50"
+          >
+            <img src="./imgnew/mush17.JPG" alt="cat hug boy" />
+          </div>
+          <div
+            class="animation"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1800"
+            data-aos-delay="50"
+          >
+            <img src="./imgnew/mush18.JPG" alt="bear hug boy" />
+          </div>
+          <div
+            class="animation"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2200"
+            data-aos-delay="50"
+          >
+            <img src="./imgnew/mush19.JPG" alt="dog hug boy and apple boy" />
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div class="detail_aria5">
+        <!-- 패키지 이미지 박스 사진  -->
+        <div>
+          <p
+            class="animation"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="600"
+          >
+            < 패키지 안내>
+            <br /><br />
+          </p>
+          <img
+            class="animation"
+            data-aos="fade-up"
+            data-aos-offset="50"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="600"
+            src="./imgnew/mush5.JPG"
+            alt="box size image"
+          />
+          <div
+            class="animation"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1600"
+          >
+            <p>박스 크기 : 약 143 x 172 x 73 (mm)</p>
+            <span> 제품 구매 시 유의사항 </span>
+            <p>
+              본 상품은 재배후 음용가능한 제품입니다. 5세 이상 사용 권장
+              상세이미지에 연출 및 사용된 소품은 미포함입니다. 보이는 이미지와
+              상이한 제품이 들어있으나 직접 사용하시기에 문제없습니다.
+            </p>
+            <span id="d_review">제품 개봉 후에는 교환/환불이 불가합니다.</span
+            ><br />
+            <span>@Copyright 2022 Circus boy band.All rights reserved</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 상세페이지 끝 -->
 
-                            외로울때 누군가 곁에 <br>
-                            있어준다면<br>
-                            배고픈 순간도<br>
-                            구석으로 밀어놓고<br>
+    <!-- 리뷰 컨테이너 -->
+    <div class="d_review">
+      <h2>REVIEW</h2>
+      <div class="d_box1">
+        <input type="text" placeholder="리뷰를 남겨보세요" />
+        <button class="saveBtn">저장하기</button>
+      </div>
+      <div class="d_box2">
+        <div>
+          <div>
+            <p>윤아*</p>
+            <p></p>
+          </div>
+          <div>
+            <span>예쁘고 귀여워요!!!</span>
+            <i class="fi fi-rr-social-network">
+              <span>0</span>
+            </i>
+          </div>
+        </div>
 
+        <div>
+          <div>
+            <p>배소*</p>
+            <p></p>
+          </div>
+          <div>
+            <span>선물 했더니 너무 좋아해요~!</span>
+            <i class="fi fi-rr-social-network">
+              <span>0</span>
+            </i>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>배진*</p>
+            <p></p>
+          </div>
+          <div>
+            <span>좋습니다.</span>
+            <i class="fi fi-rr-social-network">
+              <span>0</span>
+            </i>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p id="d_community">최상*</p>
+            <p></p>
+          </div>
+          <div>
+            <span>GOOD~!</span>
+            <i class="fi fi-rr-social-network">
+              <span>0</span>
+            </i>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                        </div>
-                        <div class=" detailLeft detail2_text animation" data-aos="fade-right" data-aos-offset="100"
-                            data-aos-mirror="true" data-aos-once="false" data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2200" data-aos-delay="50">
-                            외로움이란 감정은<br>
-                            지속적이기도 하고,<br>
-                            지나가는 바람처럼 잠시 스쳐 <br>
-                            지나갈 수도 있어요.<br>
-                            우리 일상에 <br>
-                            늘상 존재하는 감정. <br>
-                            우리는 이 감정을 <br>
-                            잘 소화하고 보내주어야 해요.<br>
-
-                        </div>
-                        <div class=" detailRight animation" data-aos="fade-left" data-aos-offset="100"
-                            data-aos-mirror="true" data-aos-once="false" data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2200" data-aos-delay="50">
-                            <img src=" ./imgnew/mush13.png" alt="circus boy band hug figure bear">
-
-                        </div>
-                    </div>
-
-                    <!-- 움직이는 텍스트 애니메이션 자바스크립트 사용  -->
-                    <div class="detail_ariaText">
-                        <div class="cover">
-                            <p class="first-parallel parall"></p>
-                        </div>
-                        <div class="cover">
-                            <p class="second-parallel parall"></p>
-                        </div>
-                    </div>
-
-
-                    <div class="detail_aria3">
-                        <!-- full 이미지 1장 스케일 픽스드 디테일 영역 3번째-->
-                        <div></div>
-                        <div class="animation" data-aos="fade-left" data-aos-anchor-placement="center-bottom"
-                            data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                            <h2>오늘,<br>당신의<br>기분은 어떤가요?</h2>
-                        </div>
-                    </div>
-                    <div class="detail_aria3Text">
-                        <p>
-                        </p>
-                    </div>
-
-                    <div class="detail_aria4">
-                        <!-- circle 이미지 4장 디테일 영역 4번째 -->
-                        <div class="dAria4_clc">
-                            <div></div>
-                            <div class="animation" data-aos="fade-up" data-aos-offset="150" data-aos-mirror="true"
-                                data-aos-once="false" data-aos-easing="ease-out-cubic" data-aos-duration="800"
-                                data-aos-delay="50">
-                                <img src=" ./imgnew/mush3.JPG" alt="cat hug boy">
-                            </div>
-                            <div class="animation" data-aos="fade-up" data-aos-offset="200" data-aos-mirror="true"
-                                data-aos-once="false" data-aos-easing="ease-out-cubic" data-aos-duration="1300"
-                                data-aos-delay="50">
-                                <img src="./imgnew/mush17.JPG" alt="cat hug boy">
-                            </div>
-                            <div class="animation" data-aos="fade-up" data-aos-offset="200" data-aos-mirror="true"
-                                data-aos-once="false" data-aos-easing="ease-out-cubic" data-aos-duration="1800"
-                                data-aos-delay="50">
-                                <img src="./imgnew/mush18.JPG" alt="bear hug boy">
-                            </div>
-                            <div class="animation" data-aos="fade-up" data-aos-offset="200" data-aos-mirror="true"
-                                data-aos-once="false" data-aos-easing="ease-out-cubic" data-aos-duration="2200"
-                                data-aos-delay="50">
-                                <img src="./imgnew/mush19.JPG" alt="dog hug boy and apple boy">
-                            </div>
-                            <div></div>
-                        </div>
-
-                    </div>
-                    <div class="detail_aria5">
-                        <!-- 패키지 이미지 박스 사진  -->
-                        <div>
-                            <p class="animation" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
-                                data-aos-easing="ease-out-cubic" data-aos-duration="600">
-                                < 패키지 안내>
-                                    <br><br>
-                            </p>
-                            <img class="animation" data-aos="fade-up" data-aos-offset="50" data-aos-mirror="true"
-                                data-aos-once="false" data-aos-anchor-placement="center-bottom"
-                                data-aos-easing="ease-out-cubic" data-aos-duration="600" src="./imgnew/mush5.JPG"
-                                alt="box size image">
-                            <div class="animation" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
-                                data-aos-easing="ease-out-cubic" data-aos-duration="1600">
-                                <p>박스 크기 : 약 143 x 172 x 73 (mm)</p>
-                                <span>
-                                    제품 구매 시 유의사항
-                                </span>
-                                <p>본 상품은 재배후 음용가능한 제품입니다.
-
-                                    5세 이상 사용 권장
-                                    상세이미지에 연출 및 사용된 소품은 미포함입니다.
-                                    보이는 이미지와
-                                    상이한 제품이 들어있으나 직접 사용하시기에 문제없습니다.</p>
-                                <span id="d_review">제품 개봉 후에는 교환/환불이 불가합니다.</span><br>
-                                <span>@Copyright 2022 Circus boy band.All rights reserved</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- 상세페이지 끝 -->
-
-                <!-- 리뷰 컨테이너 -->
-                <div class="d_review">
-                    <h2>REVIEW</h2>
-                    <div class="d_box1">
-                        <input type="text" placeholder="리뷰를 남겨보세요"> <button class="saveBtn">저장하기</button>
-                    </div>
-                    <div class="d_box2">
-                        <div>
-                            <div>
-                                <p>윤아*</p>
-                                <p></p>
-                            </div>
-                            <div>
-                                <span>예쁘고 귀여워요!!!</span>
-                                <i class="fi fi-rr-social-network">
-                                    <span>0</span>
-                                </i>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div>
-                                <p>배소*</p>
-                                <p></p>
-                            </div>
-                            <div>
-                                <span>선물 했더니 너무 좋아해요~!</span>
-                                <i class="fi fi-rr-social-network">
-                                    <span>0</span>
-                                </i>
-                            </div>
-
-                        </div>
-                        <div>
-                            <div>
-                                <p>배진*</p>
-                                <p></p>
-                            </div>
-                            <div>
-                                <span>좋습니다.</span>
-                                <i class="fi fi-rr-social-network">
-                                    <span>0</span>
-                                </i>
-                            </div>
-
-                        </div>
-                        <div>
-                            <div>
-                                <p id="d_community">최상*</p>
-                                <p></p>
-                            </div>
-                            <div><span>GOOD~!</span>
-                                <i class="fi fi-rr-social-network">
-                                    <span>0</span>
-                                </i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- 커뮤니티 컨테이너 -->
-                <div class="d_community">
-                    <h2>COMMUNITY</h2>
-                    <div>
-                        <li></li>
-                        <div class="card">
-                            <img class="tape" src="./svg/tape.svg" alt="the image with the box like tape shape" />
-                            <div class="box">
-                                <div class="titleBox">
-                                    <div class="title">넘 우울해여</div>
-                                    <img class="cardEmoji" src="svg/LONELY.svg" alt="lonley face character" />
-                                </div>
-                                <div class="contentBox">
-                                    <p>
-                                        오늘 난 좀 우울하다.<br>
-                                        회사에서 너무 짜증나는 일이 있었다.<br> 무슨 일이냐면...<br>
-                                        <br>
-                                        <더보기>
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="tape" src="./svg/tape.svg" alt="the image with the box like tape shape" />
-                            <div class="box">
-                                <div class="titleBox">
-                                    <div class="title">오늘 일기</div>
-                                    <img class="cardEmoji" src="svg/NERVOUS.svg" alt="nervous face character" />
-                                </div>
-                                <div class="contentBox">
-                                    <p>
-                                        그냥 그런 기분인 일기.<br>
-                                        감정을 선택 하라길래 이게 뭔가 하고.<br> 처음엔 좀 당황했지만 일기 처럼 적어봐요...
-                                        <br>
-                                        <br>
-                                        <더보기>
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="tape" src="./svg/tape.svg" alt="the image with the box like tape shape" />
-                            <div class="plusbox ">
-                                <a href="#" class="plus">
-
-                                </a>
-                            </div>
-                        </div>
-                        <li></li>
-                    </div>
-                </div>
+    <!-- 커뮤니티 컨테이너 -->
+    <div class="d_community">
+      <h2>COMMUNITY</h2>
+      <div>
+        <li></li>
+        <div class="card">
+          <img
+            class="tape"
+            src="./svg/tape.svg"
+            alt="the image with the box like tape shape"
+          />
+          <div class="box">
+            <div class="titleBox">
+              <div class="title">넘 우울해여</div>
+              <img
+                class="cardEmoji"
+                src="svg/LONELY.svg"
+                alt="lonley face character"
+              />
             </div>
-
-            <!-- Top 탑 버튼 & 감정 버튼 imoticon 픽스드 -->
-            <div id="btnScroll">
-                <div id="btnScrollToImotion">
-                    <a href="./list2.html"><img src="./svg/HAPPY.svg" alt="#HAPPY face character" id="imotion"></a>
-                    <img src="./svg/BORED.svg" alt="#BORED face character" id="imotion">
-                    <img src="./svg/SAD.svg" alt="#SAD face character" id="imotion">
-                    <img src="./svg/NERVOUS.svg" alt="#NERVOUS face character" id="imotion">
-                    <img src="./svg/ANGRY.svg" alt="#ANGRY face character" id="imotion">
-                    <img src="./svg/LONELY.svg" alt="#LONLEY face character" id="imotion">
-
-                </div>
-                <button id="btnScrollToTop">
-                    <i class="fi fi-rr-arrow-small-up"></i>
-                </button>
+            <div class="contentBox">
+              <p>
+                오늘 난 좀 우울하다.<br />
+                회사에서 너무 짜증나는 일이 있었다.<br />
+                무슨 일이냐면...<br />
+                <br />
+                <더보기>
+              </p>
             </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="tape"
+            src="./svg/tape.svg"
+            alt="the image with the box like tape shape"
+          />
+          <div class="box">
+            <div class="titleBox">
+              <div class="title">오늘 일기</div>
+              <img
+                class="cardEmoji"
+                src="svg/NERVOUS.svg"
+                alt="nervous face character"
+              />
+            </div>
+            <div class="contentBox">
+              <p>
+                그냥 그런 기분인 일기.<br />
+                감정을 선택 하라길래 이게 뭔가 하고.<br />
+                처음엔 좀 당황했지만 일기 처럼 적어봐요...
+                <br />
+                <br />
+                <더보기>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="tape"
+            src="./svg/tape.svg"
+            alt="the image with the box like tape shape"
+          />
+          <div class="plusbox">
+            <a href="#" class="plus"> </a>
+          </div>
+        </div>
+        <li></li>
+      </div>
+    </div>
 
+    <!-- Top 탑 버튼 & 감정 버튼 imoticon 픽스드 -->
+    <div id="btnScroll">
+      <div id="btnScrollToImotion">
+        <a href="./list2.html"
+          ><img src="./svg/HAPPY.svg" alt="#HAPPY face character" id="imotion"
+        /></a>
+        <img src="./svg/BORED.svg" alt="#BORED face character" id="imotion" />
+        <img src="./svg/SAD.svg" alt="#SAD face character" id="imotion" />
+        <img
+          src="./svg/NERVOUS.svg"
+          alt="#NERVOUS face character"
+          id="imotion"
+        />
+        <img src="./svg/ANGRY.svg" alt="#ANGRY face character" id="imotion" />
+        <img src="./svg/LONELY.svg" alt="#LONLEY face character" id="imotion" />
+      </div>
+      <button id="btnScrollToTop">
+        <i class="fi fi-rr-arrow-small-up"></i>
+      </button>
+    </div>
 
-            <!-- 푸터시작 -->
-            <footer>
-                <div class="footer-logo">
-                    <img src="./SVG/logo.svg" />
-                </div>
-                <div class="footer-word">
-                    <div class="footer-info">
-                        <p>studio@hyft.com</p>
-                        <br />
-                        <p>394, Jungang-daero, Jung-gu, Daegu, Republic of Korea</p>
-                        <p>+82 0507-1414-1018a</p>
-                    </div>
-                    <div class="footer-social">
-                        <p>Twitter</p>
-                        <p>Facebook</p>
-                        <p>Instagram</p>
-                        <p>Contact Us</p>
-                    </div>
-                </div>
-            </footer>
-            <!-- 푸터끝 -->
-</body>
-<!-- 헤더 JS -->
-<script src="common.js"></script>
-<!-- js 연결 -->
-<script src="./detailmush.js"></script>
-<script>
+    <!-- 푸터시작 -->
+    <footer>
+      <div class="footer-logo">
+        <img src="./SVG/logo.svg" />
+      </div>
+      <div class="footer-word">
+        <div class="footer-info">
+          <p>studio@hyft.com</p>
+          <br />
+          <p>394, Jungang-daero, Jung-gu, Daegu, Republic of Korea</p>
+          <p>+82 0507-1414-1018a</p>
+        </div>
+        <div class="footer-social">
+          <p>Twitter</p>
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>Contact Us</p>
+        </div>
+      </div>
+    </footer>
+    <!-- 푸터끝 -->
+  </body>
+  <!-- 헤더 JS -->
+  <script src="common.js"></script>
+  <!-- js 연결 -->
+  <script src="./detailmush.js"></script>
+  <script>
     AOS.init();
-</script>
-
-
+  </script>
 </html>
