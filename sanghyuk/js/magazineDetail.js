@@ -6,8 +6,8 @@ const swiper = new Swiper(".swiper", {
 });
 $link = document.querySelectorAll(".swiper-slide");
 $link.forEach((e) => {
-  e.style.cursor = 'pointer'
-  e.addEventListener('click', () => {
-    location.pathname = "/productDetail";
-  })
-})
+  e.style.cursor = "pointer";
+  e.addEventListener("click", () => {
+    location.pathname = "/HYFT/aram/detailmush.html";
+  });
+});

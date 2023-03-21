@@ -6,7 +6,6 @@ const $cartMenu = document.querySelector(".cart-menu");
 const $cartX = document.querySelector(".cart-right-title .fa-xmark");
 const $header = document.querySelector("header");
 const $title = document.querySelector(".header-container > p");
-console.log($title)
 $title.addEventListener('click', () => {
   location.pathname = "/HYFT/jinwha/index.html";
 })
